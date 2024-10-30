@@ -1,0 +1,22 @@
+<div class="card">
+    {% for thumbnail in advert.thumbnails %}
+        {% if loop.first %}
+            {% dump(thumbnail.path) %}
+            <img class="card-img-top"
+                 src="{{ image_url(thumbnail.path, 800, 450) }}"
+                 alt=""
+                 title=""
+            />
+        {% endif %}
+    {% endfor %}
+    <div class="card-body">
+        <h5 class="card-title">{{ advert.title }}</h5>
+        <div class="card-title text-primary">
+            {{ advert.pricePerDay |number_format }}€ / jours
+        </div>
+        <div class="card-title text-secondary">
+            {{ advert.campingCarSize }}m2
+        </div>
+        <p class="text text-muted">{{ advert.description }}</p>
+    </div>
+</div>

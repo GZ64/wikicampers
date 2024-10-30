@@ -1,0 +1,36 @@
+body {
+}
+#carouselExampleControls {
+    width: 800px;
+    margin: auto;
+}
+
+.underline-title {
+    border-bottom: 4px solid var(--bs-primary);
+    width: 80%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    grid-gap: 20px;
+}
+
+.filter {
+    display: block;
+    position: sticky;
+    top: 20px;
+}
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-login {
+    width: 60%;
+    margin: auto;
+}
+
+#home {
+    background-image: url("/public/img/home/camping_car_home.jpg");
+}

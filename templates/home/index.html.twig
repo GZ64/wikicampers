@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Annones{% endblock %}
+{% block body %}
+    <div id="home"></div>
+    <h1>Annonces</h1>
+    <p>
+        Bienvenue sur Wikicampers, la plateforme idéale pour connecter les propriétaires de camping-cars avec des
+        locataires passionnés de voyage en liberté. Que vous soyez propriétaire d’un véhicule que vous souhaitez
+        rentabiliser, ou que vous rêviez d’une escapade en plein air sans avoir à investir dans votre propre
+        camping-car, nous facilitons la mise en relation entre voyageurs et propriétaires, en toute simplicité et
+        sécurité. Profitez de notre réseau fiable pour vivre des aventures uniques, tout en optimisant l’utilisation
+        de votre véhicule ou en trouvant le camping-car parfait pour vos prochaines vacances. Explorez la route
+        autrement avec Wikicampers.
+    </p>
+
+{% endblock %}
+
+
+{#{% block body %}#}
+{#    <h1>Annonces</h1>#}
+{#    <div class="row">#}
+{#        <div class="col-md-3">#}
+{#            {% include 'components/_search-form.html.twig' with {form: form} only %}#}
+{#        </div>#}
+{#        <div class="col-md-9">#}
+{#            <div class="grid">#}
+{#                {% for advert in adverts %}#}
+{#                    {% include 'components/_card.html.twig' with {advert: advert} only %}#}
+{#                {% endfor %}#}
+{#                {{ knp_pagination_render(adverts) }}#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#{% endblock %}#}
